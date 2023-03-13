@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.vh-10 {
+  height: 10vh !important;
+  background-color: #2d333b;
+}
+
+.vh-90 {
+  height: 90vh !important;
+  background-color: #22272e;
+}
+
+.input-group {
+  width: 500px !important;
+}
+
+.form-control {
+  background-color: rgba(68, 68, 68, 0.8);
+  color: #fff;
+}
+.form-control:focus {
+  background-color: rgba(68, 68, 68, 0.8);
+  border: 1px solid #ced4da;
+  box-shadow: none;
+  color: #fff;
+}
+
+.gitcard {
+  background-color: #2d333b;
+  border: 2px solid #ced4da;
+  color: #cdd9e5;
+  border-radius: 20px;
+  text-align: center;
+  width: 335px;
+  box-shadow: 0 0 8px rgba(206, 212, 218, 0.35);
+}
+.gitcard img {
+  border: 3px solid #ced4da;
+  width: 150px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+}
+.gitcard img:hover {
+  -webkit-transform: rotate(-45deg);
+}
+
+.gitstat {
+  border-top: 1px solid #ced4da;
+  list-style: none;
+  font-size: 15px;
+}
+.gitstat .gitnum {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+//Typography
+$Kumbh: 'Kumbh Sans', sans-serif; //Weights: 400, 700
+
+$palette: (
+    //Github Colors
+    --bg-10: #2d333b,
+    --bg-90: #22272e,
+    --border: #ced4da,
+    --text-color: #cdd9e5,
+);
+
+@function color($color-name) {
+	@return map-get($palette, $color-name)
+};
+
+body{
+    font-family: $Kumbh;
+}
+
+.vh-10{
+    height: 10vh!important;
+    background-color: color(--bg-10);
+}
+
+.vh-90{
+    height: 90vh!important;
+    background-color: color(--bg-90);
+}
+
+.input-group{
+    width: 500px!important;
+}
+
+.form-control{
+    background-color: #444c;
+    color: #fff;
+
+    &:focus{
+        background-color: #444c;
+        border: 1px solid color(--border);
+        box-shadow: none;
+        color: #fff;
+    }
+}
+
+.gitcard{
+    background-color: color(--bg-10);
+    border: 2px solid color(--border);
+    color: color(--text-color);
+    border-radius: 20px;
+    text-align: center;
+    width: 335px;
+    box-shadow: 0 0 8px rgba(color(--border), 0.35);
+
+    img{
+        border: 3px solid color(--border);
+        width: 150px;
+        -webkit-transition: -webkit-transform .2s ease-in-out;
+        &:hover{
+            -webkit-transform: rotate(-45deg);
+        }
+    }
+}
+
+.gitstat{
+    border-top: 1px solid color(--border);
+    list-style: none;
+    font-size: 15px;
+    .gitnum{
+        margin: 0;
+        font-size: 18px;
+        font-weight: 900;
+    }
+}
